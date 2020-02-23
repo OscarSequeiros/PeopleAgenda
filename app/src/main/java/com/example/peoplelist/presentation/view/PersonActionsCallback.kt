@@ -1,4 +1,6 @@
 package com.example.peoplelist.presentation.view
 
-interface ActionsItemCallback {
+interface PersonActionsCallback {
+
+    fun atGivenLike(personId: String)
 }

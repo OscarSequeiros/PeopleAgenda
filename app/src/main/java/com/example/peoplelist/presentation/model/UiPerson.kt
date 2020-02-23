@@ -1,4 +1,4 @@
-package com.example.peoplelist.presentation
+package com.example.peoplelist.presentation.model
 
 data class UiPerson(
     val id: String,

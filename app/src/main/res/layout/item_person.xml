@@ -8,22 +8,23 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="16dp">
 
         <ImageView
             android:id="@+id/imagePhoto"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:contentDescription="@null"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_thumb_up_outline" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
             android:ellipsize="end"
             android:maxLines="1"
             app:layout_constraintEnd_toStartOf="@+id/imageLike"
@@ -35,6 +36,7 @@
             android:id="@+id/textEmail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
             android:ellipsize="end"
             android:maxLines="1"
             app:layout_constraintEnd_toStartOf="@+id/imageLike"
@@ -46,6 +48,7 @@
             android:id="@+id/textGender"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
             android:ellipsize="end"
             android:maxLines="1"
             app:layout_constraintEnd_toStartOf="@+id/imageLike"
@@ -54,9 +57,10 @@
             tools:text="Male" />
 
         <ImageView
+            android:padding="@dimen/margin_4"
             android:id="@+id/imageLike"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="@dimen/dimen_32"
+            android:layout_height="@dimen/dimen_32"
             android:contentDescription="@null"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
