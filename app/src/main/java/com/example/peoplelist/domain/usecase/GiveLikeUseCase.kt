@@ -1,4 +1,8 @@
 package com.example.peoplelist.domain.usecase
 
-class GiveLikeUseCase {
+import com.example.peoplelist.domain.PeopleRepository
+
+class GiveLikeUseCase(private val repository: PeopleRepository) {
+
+    fun execute(personId: String) = repository.giveLike(personId)
 }
